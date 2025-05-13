@@ -31,7 +31,7 @@ public class BombScript : MonoBehaviour
         Vector2 spawnPos = new Vector2 (transform.position.x, transform.position.z);
         int divMain =  (int) Mathf.Floor (spawnPos.x / gridOffSet);
         float module = spawnPos.x % gridOffSet;
-        if (module > gridOffSet / 2) divMain++; 
+        if (Mathf.Abs (module) > gridOffSet / 2) divMain++; 
         spawnPos.x = divMain * gridOffSet;
 
         divMain = (int)Mathf.Floor(Mathf.Abs (spawnPos.y / gridOffSet));
@@ -79,5 +79,10 @@ public class BombScript : MonoBehaviour
     public void DisableObject()
     {
         gameObject.SetActive(false);
+    }
+
+    public void SetBombRange(int range)
+    {
+        this.range = range;
     }
 }

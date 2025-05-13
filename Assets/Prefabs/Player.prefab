@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 6872749874251759679}
   - component: {fileID: 1866176503566544925}
   - component: {fileID: 5699195451322388455}
+  - component: {fileID: 6083043436235965613}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -242,6 +243,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDir: {x: 0, y: 0}
+  OnBombPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!143 &1866176503566544925
 CharacterController:
   m_ObjectHideFlags: 0
@@ -280,3 +284,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+--- !u!114 &6083043436235965613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7960057174089706003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1f11dd9c153cf4e961e3a6b9ae58ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombPrefab: {fileID: 0}
+  bombPoolParent: {fileID: 0}
+  maxBombs: 0
+  bombRange: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9047610721323025722}
   - component: {fileID: 4019469742969126314}
   - component: {fileID: 3307707962426088676}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,6 +69,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802fca8a0d0f2e64eb545326d95c1d0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridOffSet: 0
+  spawnHeight: 0
   range: 0
   explotionTimer: 0
   layerMask:
@@ -108,7 +110,7 @@ GameObject:
   - component: {fileID: 5220547609102150533}
   - component: {fileID: 8985648062046437650}
   - component: {fileID: 635055085032784327}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +232,7 @@ GameObject:
   - component: {fileID: 5665827900096207641}
   - component: {fileID: 6244053646175432222}
   - component: {fileID: 3792156789484979356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
