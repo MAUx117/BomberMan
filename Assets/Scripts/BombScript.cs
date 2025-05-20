@@ -70,6 +70,8 @@ public class BombScript : MonoBehaviour
             foreach (RaycastHit hit in hits)
             {
                 if (hit.transform.tag == "Unbreakable") break;
+                if (hit.transform.tag == "Player")
+                    hit.transform.GetComponent<MovementController>().DisablePlayer(); 
                 hit.transform.gameObject.SetActive(false);
                 if (hit.transform.tag == "Breakable") break ;
             }
